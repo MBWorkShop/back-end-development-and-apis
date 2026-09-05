@@ -1,0 +1,17 @@
+{
+  "name": "prime-number-checker-module",
+  "version": "1.0.0",
+  "description": "This is a module which can check inputs for prime numbers.",
+  "keywords": [
+    "prime",
+    "number",
+    "check"
+  ],
+  "license": "MIT",
+  "author": "Matti Boos",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
