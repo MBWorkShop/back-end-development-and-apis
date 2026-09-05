@@ -1,7 +1,4 @@
-const fs = require('fs'); console.log(fs);
-fs.writeFileSync("assets/output.txt", "Hello, freeCodeCamp!");
-fs.appendFileSync("assets/output.txt", "\nICh bin Matti und los gehts!");
-const exists = fs.existsSync("assets/output.txt");
-console.log(exists);
-const entries = fs.readdirSync("assets");
-console.log(entries);
+const fs = require("fs");
+const readable = fs.createReadStream("assets/poem.txt");
+const writable = fs.createWriteStream("assets/stream-output.txt");
+readable.pipe(writable);
